@@ -4,19 +4,25 @@ const increaseBTN = document.querySelector("#increaseBTN");
 const Number = document.querySelector("#Number");
 const BTn = document.querySelectorAll(".BTn");
 let count = 0;
-
+// ===============This is for the index.html =============
 BTn.forEach((btn) => {
   console.log(btn);
   btn.addEventListener("click", (event) => {
     let chosenBTn = event.currentTarget.classList;
     if (chosenBTn.contains("decrease")) {
       count--;
-      Number.style.color = "red";
     } else if (chosenBTn.contains("increase")) {
       count++;
-      Number.style.color = "green";
     } else {
       count = 0;
+    }
+    if (count < 0) {
+      Number.style.color = "red";
+    }
+    if (count > 0) {
+      Number.style.color = "green";
+    }
+    if (count === 0) {
       Number.style.color = "black";
     }
     Number.textContent = count;
