@@ -4,7 +4,7 @@ const increaseBTN = document.querySelector("#increaseBTN");
 const Number = document.querySelector("#Number");
 const BTn = document.querySelectorAll(".BTn");
 let count = 0;
-
+// ===================This is for index.html page===========================
 BTn.forEach((btn) => {
   console.log(btn);
   btn.addEventListener("click", (event) => {
