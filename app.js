@@ -11,12 +11,18 @@ BTn.forEach((btn) => {
     let chosenBTn = event.currentTarget.classList;
     if (chosenBTn.contains("decrease")) {
       count--;
-      Number.style.color = "red";
     } else if (chosenBTn.contains("increase")) {
       count++;
-      Number.style.color = "green";
     } else {
       count = 0;
+    }
+    if (count < 0) {
+      Number.style.color = "red";
+    }
+    if (count > 0) {
+      Number.style.color = "green";
+    }
+    if (count === 0) {
       Number.style.color = "black";
     }
     Number.textContent = count;
