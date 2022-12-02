@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: roboto;
+}
+:root {
+  --ColorOne: #121d63;
+  --colorTwo: #060d3d;
+}
+body {
+  background: linear-gradient(to right, var(--ColorOne), var(--colorTwo));
+}
+.pageColor {
+  width: 80%;
+  margin: 30px auto;
+  background-color: white;
+  height: 90vh;
+  border-radius: 10px;
+  box-shadow: 6px 4px 1px rgb(150, 32, 32), 7px 4px 1px rgb(63, 10, 10),
+    8px 4px 1px rgb(63, 7, 7);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pageColor button {
+  width: 80%;
+  height: 80%;
+  margin: 10px 0;
+  font-size: 60px;
+  font-weight: 800;
+  border-radius: 4px;
+  box-shadow: 1px 1px 10px #000;
+  cursor: pointer;
+}
+#facebook_link {
+  background: #121d63;
+  color: #fff;
+}
+#Tiktok_link {
+  background: #000;
+  font-family: Montserrat;
+  font-weight: bolder;
+  color: #fff;
+}
+#Watsapp_link {
+  color: #fff;
+  background: rgb(26, 119, 26);
+}
